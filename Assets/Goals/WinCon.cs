@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinCon : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class WinCon : MonoBehaviour
 
         public bool hasWon = false;
 
-        void start()
+    void start()
         {
             
         }
@@ -33,5 +34,6 @@ public class WinCon : MonoBehaviour
     void WinGame()
     {
         Debug.Log("You Win!");
+        SceneManager.LoadScene("win screen");
     }
 }

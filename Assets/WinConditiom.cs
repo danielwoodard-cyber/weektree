@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinConditiom : MonoBehaviour
 {
@@ -27,5 +28,6 @@ public class WinConditiom : MonoBehaviour
     void WinGame()
     {
         Debug.Log("Congrats!");
+        SceneManager.LoadScene("hansen maze");
     }
 }
